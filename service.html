@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <!-- BOOTSTRAP ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/f607cb2506.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad&family=Bebas+Neue&family=Bodoni+Moda:opsz,wght@6..96,500&family=Dancing+Script:wght@400;500;600;700&family=Kalnia:wght@700&family=Kanit:wght@300&family=Merriweather:ital,wght@1,300&family=Montserrat:ital,wght@0,100;0,200;0,600;1,100&family=Noto+Serif:wght@300&family=Poppins:ital,wght@0,200;0,300;0,500;1,900&family=Rethink+Sans&family=Roboto+Mono:wght@200;300;500&family=Roboto+Slab&family=Whisper&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./css/service.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo"><img src="./images/logo1.png" alt=""></a>
+        <!-- Added onclick attribute to call toggleMenu function -->
+        <div class="fas fa-bars" onclick="toggleMenu()"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <!-- Modified to include dropdown for Services -->
+                <li class="dropdown">
+                    <a href="#">Services</a>
+                    <div class="dropdown-content">
+                        <a href="#">IT Services</a>
+                        <a href="#">BPO Services</a>
+                        <a href="#">Digital Publishing</a>
+                    </div>
+                </li>
+                <li><a href="./careers.html">Careers</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div style="display: flex; justify-content: center; margin-top: 75px;">
+        <h1 style="font-size: 40px; font-weight: 900; font-style: italic; font-family: 'Poppins', sans-serif;">Services
+            We Provide</h1>
+    </div>
+    <!-- 
+    <h1
+        style="; font-size: 40px; margin-top: 75px; border-left: 2px solid black; border-right: 2px solid black; width: fit-content;">
+        Services We Provide</h1> -->
+
+    <!-- SERVICES -->
+    <div class="service-container">
+        <div class="service1">
+            <div>
+                <img src="./images/back5.jpg" alt="">
+
+            </div>
+            <div>
+                <h1 style="font-size:30px; font-family: 'Poppins', sans-serif; font-weight: 600;">IT / ITes Services
+                </h1>
+                <p>We pioneer tech solutions of tomorrow's success, empowering businesses with innovation, integration,
+                    and constant
+                    elevation."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- section 1 -->
+
+    <div id="section2">
+        <div class="cat2">
+            <ion-icon name="logo-chrome" style="margin-right: 7px; color: #2B3499; font-size: 35px;"></ion-icon>
+            <h2>Web Development, Design</h2>
+            <p>Creating and optimizing websites for enhanced user experience and functionality.</p>
+        </div>
+        <div class="cat2">
+            <ion-icon name="person-outline" style="margin-right: 7px; color: #2B3499; font-size: 35px;"></ion-icon>
+            <h2>IT Consulting</h2>
+            <p>Presentations are communication tools that can be used as demonstrations, lectures, speeches,
+                reports,
+            </p>
+        </div>
+        <div class="cat2">
+            <ion-icon name="stats-chart-outline" style="margin-right: 7px; color: #2B3499; font-size: 35px;"></ion-icon>
+            <h2>Data Analytics and Business Intelligence</h2>
+            <p>Extracting actionable insights from data to support informed decision-making.</p>
+        </div>
+        <div class="cat2">
+            <ion-icon name="lock-closed-outline" style="margin-right: 7px; color: #2B3499; font-size: 35px;"></ion-icon>
+            <h2>Cybersecurity Services</h2>
+            <p>Protecting digital assets through robust security measures and protocols.</p>
+            <div id="sec3-scroll"></div>
+
+        </div>
+    </div>
+
+    <!-- IMAGE 2 -->
+    <div class="service-container2">
+        <div class="service1">
+            <div>
+                <img src="./images/web dev.jpg" alt="">
+
+            </div>
+            <div>
+                <h1 style="font-size:30px; font-family: 'Poppins', sans-serif; font-weight: 600;">Digital Publishing
+                    Services</h1>
+                <p>Designing, developing, and optimizing websites to provide an exceptional user experience, seamless
+                    functionality, and
+                    effective performance that aligns with business objectives and user expectations.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- section 2 -->
+    <div class="sections">
+        <!-- section 1 -->
+        <div id="section1">
+            <div class="cat1">
+                <ion-icon name="accessibility-outline" style="font-size: 30px; color: #2B3499;"></ion-icon>
+                <h2>Accessibility</h2>
+                <p>We excels in ADA, 508, WCAG compliance, offering global accessibility solutions. Expert audits,
+                    remediation,
+                    consulting,
+                    and training services ensure compliance excellence."</p>
+            </div>
+            <div class="cat1">
+                <ion-icon name="laptop-outline" style="margin-right: 7px; color: #2B3499; font-size: 35px;"></ion-icon>
+                <h2>Digital Conversion</h2>
+                <p>Transform your content for the digital era with expert conversion services, specializing in XML and
+                    eBooks, ensuring a
+                    strong presence across devices
+                </p>
+            </div>
+            <div class="cat1">
+                <ion-icon name="document-outline"
+                    style="margin-right: 7px; color: #2B3499; font-size: 35px;"></ion-icon>
+                <h2>Page Compositon</h2>
+                <p>Excel in composition using Adobe InDesign, 3B2, and LaTeX. Our tailored XML workflows maintain
+                    content integrity,
+                    offering templates, print-ready files, and Pitstop reports.
+                </p>
+            </div>
+            <div class="cat1">
+                <ion-icon name="brush-outline" style="margin-right: 7px; color: #2B3499 ; font-size: 35px;"></ion-icon>
+                <h2>Art & Illustration</h2>
+                <p>"Our skilled graphic designers offer precise and creative artwork services, from intricate
+                    illustrations
+                    to
+                    image
+                    enhancements. Services include conversions, redraws, and banners."</p>
+                <div id="sec2-scroll"></div>
+
+            </div>
+        </div>
+
+        <!-- IMAGE 3 -->
+
+        <div class="service-container3">
+            <div class="service1">
+                <div>
+                    <img src="./images/bpo.jpg" alt="">
+
+                </div>
+                <div>
+                    <h1 style="font-size:30px; font-family: 'Poppins', sans-serif; font-weight: 600;">BPO Services</h1>
+                    <p>GIT Globaltech excels in BPO services, delivering meticulous market research and regulatory
+                        compliance support. Our
+                        expertise extends to efficient insurance claims processing and strategic fraud detection,
+                        ensuring robust financial
+                        security for clients. With a commitment to operational excellence, we enhance business processes
+                        across diverse sectors.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="section3">
+            <div class="cat3">
+                <ion-icon name="trending-up-outline"
+                    style="margin-right: 7px; color: #2B3499; font-size: 35px;"></ion-icon>
+                <h2>Market Research & Analysis</h2>
+                <p>Conduct market research and analysis for the telecom, insurance, and banking sectors to help clients
+                    make
+                    informed
+                    business decisions.</p>
+            </div>
+            <div class="cat3">
+                <ion-icon name="people-outline" style="margin-right: 7px; color: #2B3499; font-size: 35px;"></ion-icon>
+                <h2>Compliance & Regulatory Support</h2>
+                <p>Provide assistance in ensuring compliance with industry regulations and standards for telecom,
+                    insurance,
+                    banking and
+                    other clients.</p>
+            </div>
+            <div class="cat3">
+                <ion-icon name="shield-checkmark-outline"
+                    style="margin-right: 7px; color: #2B3499; font-size: 35px;"></ion-icon>
+                <h2>Claims Processing</h2>
+                <p>Specialize in insurance claims processing, ensuring efficient and accurate handling of claims for
+                    clients
+                    in the UK
+                    insurance sector..</p>
+            </div>
+            <div class="cat3">
+                <ion-icon name="bug-outline" style="margin-right: 7px; color: #2B3499; font-size: 35px;"></ion-icon>
+                <h2>Fraud Detection & Prevention</h2>
+                <p>Offer expertise in fraud detection and prevention strategies for banks, enhancing security and
+                    protecting
+                    clients'
+                    financial interests.</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- ======= Footer ======= -->
+    <footer class="footer">
+        <div class="footer-details">
+            <div class="detail1">
+                <h2 style="font-weight: bold;">About Us</h2>
+                <p>GITGlobaltech offers a comprehensive range of staffing and IT services to help businesses of all
+                    sizes
+                    achieve their
+                    goals.</p>
+            </div>
+            <div class="detail2">
+                <h2 style="font-weight: bold;">Our Services</h2>
+                <p>Digital Publishing Services</p>
+                <p>IT/ITes Services</p>
+                <p>BPO Services</p>
+            </div>
+            <div class="detail3">
+                <h2 style="font-weight: bold;">Contact Us</h2>
+                <p style="white-space: nowrap;"><ion-icon name="location-outline"
+                        style="margin-right: 10px; color: #e30404;"></ion-icon>GEEKS
+                    IKON TECHNOLOGIES PVT. LTD</p>
+                <p>Survey No: 72, Unit : 602 A, 6th floor, CAPITAL PARK, Image Garden Road, silicon valley,
+                    Madhapur Hitech city -Hyderabad
+                    - 500081
+                     TELANGANA</p>
+                <p><ion-icon name="call-outline" style="margin-right: 10px; color: #e30404;"></ion-icon>+91-8008
+                    06665</p>
+                <p><ion-icon name="mail-outline"
+                        style="margin-right: 10px; color: #e30404;"></ion-icon>info@gitglobaltech.com</p>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>© GIT Globaltech 2024, All Rights Are Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="
+            https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js
+            "></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script>
+
+    <script src="./service.js"></script>
+</body>
+
+</html>

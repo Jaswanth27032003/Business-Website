@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/f607cb2506.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad&family=Bebas+Neue&family=Bodoni+Moda:opsz,wght@6..96,500&family=Dancing+Script:wght@400;500;600;700&family=Kalnia:wght@700&family=Kanit:wght@300&family=Merriweather:ital,wght@1,300&family=Montserrat:ital,wght@0,100;0,200;0,600;1,100&family=Noto+Serif:wght@300&family=Poppins:ital,wght@0,200;0,300;0,500;1,900&family=Rethink+Sans&family=Roboto+Mono:wght@200;300;500&family=Roboto+Slab&family=Whisper&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo"><img src="./images/logo1.png" alt=""></a>
+        <!-- Added onclick attribute to call toggleMenu function -->
+        <div class="fas fa-bars" onclick="toggleMenu()"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <!-- Modified to include dropdown for Services -->
+                <li class="dropdown">
+                    <a href="./service.html">Services</a>
+                    <div class="dropdown-content">
+                        <a href="./service.html">IT Services</a>
+                        <a href="./service.html">BPO Services</a>
+                        <a href="./service.html">Digital Publishing</a>
+                    </div>
+                </li>
+                <li><a href="./careers.html">Careers</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="feedback-title">Contact Us</h1>
+
+
+    <div class="container">
+        <img src="./images/back15.jpg" alt="">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+            <input type="email" id="email" placeholder="Your Email ID" required>
+            <input type="text" id="phone" placeholder="Enter Phone No." required>
+            <textarea name="" id="message" rows="4" placeholder="Write you Feedback"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+
+
+    <!-- ======= Footer ======= -->
+    <footer class="footer">
+        <div class="footer-details">
+            <div class="detail1">
+                <h2>About Us</h2>
+                <p>GITGlobaltech offers a comprehensive range of staffing and IT services to help businesses of all
+                    sizes
+                    achieve their
+                    goals.</p>
+            </div>
+            <div class="detail2">
+                <h2>Our Services</h2>
+                <p>Digital Publishing Services</p>
+                <p>IT/ITes Services</p>
+                <p>BPO Services</p>
+            </div>
+            <div class="detail3">
+                <h2>Contact Us</h2>
+                <p style="white-space: nowrap;"><ion-icon name="location-outline"
+                        style="margin-right: 10px; color: #e30404;"></ion-icon>GEEKS
+                    IKON TECHNOLOGIES PVT. LTD</p>
+                <p>Survey No: 72, Unit : 602 A, 6th floor, CAPITAL PARK, Image Garden Road, silicon valley,
+                    Madhapur Hitech city -Hyderabad
+                    - 500081
+                     TELANGANA</p>
+                <p><ion-icon name="call-outline" style="margin-right: 10px; color: #e30404;"></ion-icon>+91-8008
+                    06665</p>
+                <p><ion-icon name="mail-outline"
+                        style="margin-right: 10px; color: #e30404;"></ion-icon>info@gitglobaltech.com</p>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>© GIT Globaltech 2024, All Rights Are Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js
+    "></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script src="contact.js"></script>
+
+</body>
+
+</html>
